@@ -1,0 +1,213 @@
+[2024-09-07 11:24:59.623] [126410] [trace] uv_loop_init:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [info] loop construct, name:remu-loop, handle:0x563842ab5050, started:0, active:0, tid:0
+[2024-09-07 11:24:59.623] [126410] [trace] uv_async_init:0x563842ab56d0, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [trace] uv_async_init:0x563842ab57f0, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [info] timer construct, id:0, name:start-timer, timeout:0, repeat:0, handle:0x563842ab5918, loop:0x563842ab5050
+[2024-09-07 11:24:59.623] [126410] [trace] uv_timer_init:0x563842ab5918, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [trace] uv_timer_start:0x563842ab5918, active:1, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [info] loop name:remu-loop, handle:0x563842ab5050, started:0, active:1, tid:0, add timer, id:0, name:start-timer, timeout:0, repeat:0, handle:0x563842ab5918, loop:0x563842ab5050
+[2024-09-07 11:24:59.623] [126410] [info] timer construct, id:1, name:remu-timer, timeout:0, repeat:1000, handle:0x563842ab5ba8, loop:0x563842ab5050
+[2024-09-07 11:24:59.623] [126410] [trace] uv_timer_init:0x563842ab5ba8, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [trace] uv_timer_start:0x563842ab5ba8, active:1, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [info] loop name:remu-loop, handle:0x563842ab5050, started:0, active:1, tid:0, add timer, id:1, name:remu-timer, timeout:0, repeat:1000, handle:0x563842ab5ba8, loop:0x563842ab5050
+[2024-09-07 11:24:59.623] [126410] [info] acceptor construct, addr:127.0.0.1:8000, handle:0x563842ab7fa0, loop:0x563842ab5050
+[2024-09-07 11:24:59.623] [126410] [trace] uv_tcp_init:0x563842ab7fa0, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [trace] uv_tcp_nodelay:0x563842ab7fa0, nodelay:1, rv:0, ok
+[2024-09-07 11:24:59.623] [126410] [info] tcp-server construct, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:8000, handle:0x563842ab7fa0, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.625] [126410] [info] solid-data construct, path:/tmp/remu_test_dir/127.0.0.1:8000/meta, 0x563842ab8348
+[2024-09-07 11:24:59.625] [126410] [info] raft construct, 127.0.0.1:8000#0, 0x563842ab8140
+[2024-09-07 11:24:59.645] [126410] [trace] 
+0x17F2D85CA480BF02 state_change: 2024:09:07 11:24:59 644813058 --- 127.0.0.1:8000#0 ---
+0x17F2D85CA480BF02 state_begin : {"127.0.0.1:8000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":"null"}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+0x17F2D85CA480BF02 event_other : append first config, term:1, index:1, type:Config, value-len:28
+0x17F2D85CA480BF02 event_other : 127.0.0.1:8000#0 init-config {"rc":["127.0.0.1:8000#0","127.0.0.1:8001#0","127.0.0.1:8002#0"]}
+0x17F2D85CA480BF02 state_end   : {"127.0.0.1:8000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+[2024-09-07 11:24:59.646] [126410] [trace] 
+0x17F2D85CA4924AEC state_change: 2024:09:07 11:24:59 645962988 --- 127.0.0.1:8000#0 ---
+0x17F2D85CA4924AEC state_begin : {"127.0.0.1:8000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+0x17F2D85CA4924AEC event_other : 127.0.0.1:8000#0 enable-send
+0x17F2D85CA4924AEC state_end   : {"127.0.0.1:8000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+[2024-09-07 11:24:59.646] [126410] [trace] 
+0x17F2D85CA4954788 state_change: 2024:09:07 11:24:59 646158728 --- 127.0.0.1:8000#0 ---
+0x17F2D85CA4954788 state_begin : {"127.0.0.1:8000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+0x17F2D85CA4954788 event_other : 127.0.0.1:8000#0 enable-recv
+0x17F2D85CA4954788 state_end   : {"127.0.0.1:8000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+[2024-09-07 11:24:59.646] [126410] [info] raft-server construct, loop:0x563842ab5050, 127.0.0.1:8000, 0x563842ab7cf0
+[2024-09-07 11:24:59.646] [126410] [info] acceptor construct, addr:127.0.0.1:8001, handle:0x563842ac35a0, loop:0x563842ab5050
+[2024-09-07 11:24:59.646] [126410] [trace] uv_tcp_init:0x563842ac35a0, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.646] [126410] [trace] uv_tcp_nodelay:0x563842ac35a0, nodelay:1, rv:0, ok
+[2024-09-07 11:24:59.646] [126410] [info] tcp-server construct, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:8001, handle:0x563842ac35a0, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.648] [126410] [info] solid-data construct, path:/tmp/remu_test_dir/127.0.0.1:8001/meta, 0x563842b2ea48
+[2024-09-07 11:24:59.648] [126410] [info] raft construct, 127.0.0.1:8001#0, 0x563842b2e840
+[2024-09-07 11:24:59.672] [126410] [trace] 
+0x17F2D85CA602108E state_change: 2024:09:07 11:24:59 670065294 --- 127.0.0.1:8001#0 ---
+0x17F2D85CA602108E state_begin : {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":"null"}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+0x17F2D85CA602108E event_other : append first config, term:1, index:1, type:Config, value-len:28
+0x17F2D85CA602108E event_other : 127.0.0.1:8001#0 init-config {"rc":["127.0.0.1:8001#0","127.0.0.1:8000#0","127.0.0.1:8002#0"]}
+0x17F2D85CA602108E state_end   : {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+[2024-09-07 11:24:59.672] [126410] [trace] 
+0x17F2D85CA62254D5 state_change: 2024:09:07 11:24:59 672179925 --- 127.0.0.1:8001#0 ---
+0x17F2D85CA62254D5 state_begin : {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+0x17F2D85CA62254D5 event_other : 127.0.0.1:8001#0 enable-send
+0x17F2D85CA62254D5 state_end   : {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+[2024-09-07 11:24:59.673] [126410] [trace] 
+0x17F2D85CA62CB0A7 state_change: 2024:09:07 11:24:59 672858791 --- 127.0.0.1:8001#0 ---
+0x17F2D85CA62CB0A7 state_begin : {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+0x17F2D85CA62CB0A7 event_other : 127.0.0.1:8001#0 enable-recv
+0x17F2D85CA62CB0A7 state_end   : {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+[2024-09-07 11:24:59.673] [126410] [info] raft-server construct, loop:0x563842ab5050, 127.0.0.1:8001, 0x563842ac5e60
+[2024-09-07 11:24:59.673] [126410] [info] acceptor construct, addr:127.0.0.1:8002, handle:0x563842b62190, loop:0x563842ab5050
+[2024-09-07 11:24:59.673] [126410] [trace] uv_tcp_init:0x563842b62190, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.673] [126410] [trace] uv_tcp_nodelay:0x563842b62190, nodelay:1, rv:0, ok
+[2024-09-07 11:24:59.673] [126410] [info] tcp-server construct, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:8002, handle:0x563842b62190, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.679] [126410] [info] solid-data construct, path:/tmp/remu_test_dir/127.0.0.1:8002/meta, 0x563842b625b8
+[2024-09-07 11:24:59.679] [126410] [info] raft construct, 127.0.0.1:8002#0, 0x563842b623b0
+[2024-09-07 11:24:59.717] [126410] [trace] 
+0x17F2D85CA8B73685 state_change: 2024:09:07 11:24:59 715491461 --- 127.0.0.1:8002#0 ---
+0x17F2D85CA8B73685 state_begin : {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":"null"}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+0x17F2D85CA8B73685 event_other : append first config, term:1, index:1, type:Config, value-len:28
+0x17F2D85CA8B73685 event_other : 127.0.0.1:8002#0 init-config {"rc":["127.0.0.1:8002#0","127.0.0.1:8000#0","127.0.0.1:8001#0"]}
+0x17F2D85CA8B73685 state_end   : {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+[2024-09-07 11:24:59.718] [126410] [trace] 
+0x17F2D85CA8D6F97C state_change: 2024:09:07 11:24:59 717572988 --- 127.0.0.1:8002#0 ---
+0x17F2D85CA8D6F97C state_begin : {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+0x17F2D85CA8D6F97C event_other : 127.0.0.1:8002#0 enable-send
+0x17F2D85CA8D6F97C state_end   : {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+[2024-09-07 11:24:59.718] [126410] [trace] 
+0x17F2D85CA8E15B82 state_change: 2024:09:07 11:24:59 718253442 --- 127.0.0.1:8002#0 ---
+0x17F2D85CA8E15B82 state_begin : {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+0x17F2D85CA8E15B82 event_other : 127.0.0.1:8002#0 enable-recv
+0x17F2D85CA8E15B82 state_end   : {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+[2024-09-07 11:24:59.718] [126410] [info] raft-server construct, loop:0x563842ab5050, 127.0.0.1:8002, 0x563842b61ee0
+[2024-09-07 11:24:59.719] [126410] [info] acceptor construct, addr:127.0.0.1:9000, handle:0x563842bf5470, loop:0x563842ab5050
+[2024-09-07 11:24:59.719] [126410] [trace] uv_tcp_init:0x563842bf5470, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.719] [126410] [trace] uv_tcp_nodelay:0x563842bf5470, nodelay:1, rv:0, ok
+[2024-09-07 11:24:59.719] [126410] [info] tcp-server construct, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:9000, handle:0x563842bf5470, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.724] [126410] [info] solid-data construct, path:/tmp/remu_test_dir/127.0.0.1:9000/meta, 0x563842bf5818
+[2024-09-07 11:24:59.724] [126410] [info] raft construct, 127.0.0.1:9000#0, 0x563842bf5610
+[2024-09-07 11:24:59.762] [126410] [trace] 
+0x17F2D85CAB6CF52C state_change: 2024:09:07 11:24:59 760956716 --- 127.0.0.1:9000#0 ---
+0x17F2D85CAB6CF52C state_begin : {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":"null"}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+0x17F2D85CAB6CF52C event_other : append first config, term:1, index:1, type:Config, value-len:12
+0x17F2D85CAB6CF52C event_other : 127.0.0.1:9000#0 init-config {"rc":["127.0.0.1:9000#0"]}
+0x17F2D85CAB6CF52C state_end   : {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+[2024-09-07 11:24:59.763] [126410] [trace] 
+0x17F2D85CAB88853A state_change: 2024:09:07 11:24:59 762763066 --- 127.0.0.1:9000#0 ---
+0x17F2D85CAB88853A state_begin : {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+0x17F2D85CAB88853A event_other : 127.0.0.1:9000#0 enable-send
+0x17F2D85CAB88853A state_end   : {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+[2024-09-07 11:24:59.763] [126410] [trace] 
+0x17F2D85CAB903CD3 state_change: 2024:09:07 11:24:59 763268819 --- 127.0.0.1:9000#0 ---
+0x17F2D85CAB903CD3 state_begin : {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+0x17F2D85CAB903CD3 event_other : 127.0.0.1:9000#0 enable-recv
+0x17F2D85CAB903CD3 state_end   : {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+[2024-09-07 11:24:59.763] [126410] [info] raft-server construct, loop:0x563842ab5050, 127.0.0.1:9000, 0x563842bf51c0
+[2024-09-07 11:24:59.763] [126410] [info] tcp-server start, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:8000, handle:0x563842ab7fa0, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.763] [126410] [info] acceptor start, addr:127.0.0.1:8000, handle:0x563842ab7fa0, loop:0x563842ab5050
+[2024-09-07 11:24:59.763] [126410] [trace] uv_tcp_bind:0x563842ab7fa0, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_listen:0x563842ab7fa0, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [info] timer construct, id:2, name:tick-timer, timeout:0, repeat:1000, handle:0x563842c66b28, loop:0x563842ab5050
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_init:0x563842c66b28, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [info] timer construct, id:3, name:election-timer, timeout:2162, repeat:0, handle:0x563842c66c68, loop:0x563842ab5050
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_init:0x563842c66c68, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [info] timer construct, id:4, name:rpc-timer, timeout:0, repeat:1000, handle:0x563842c66da8, loop:0x563842ab5050
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_init:0x563842c66da8, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [info] timer construct, id:5, name:rpc-timer, timeout:0, repeat:1000, handle:0x563842c66ee8, loop:0x563842ab5050
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_init:0x563842c66ee8, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [info] timer construct, id:6, name:heartbeat-timer, timeout:0, repeat:500, handle:0x563842c67028, loop:0x563842ab5050
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_init:0x563842c67028, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [info] timer construct, id:7, name:heartbeat-timer, timeout:0, repeat:500, handle:0x563842c67168, loop:0x563842ab5050
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_init:0x563842c67168, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_start:0x563842c66b28, active:1, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_stop:0x563842c67028, active:0, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_stop:0x563842c67168, active:0, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_stop:0x563842c66da8, active:0, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_stop:0x563842c66ee8, active:0, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_stop:0x563842c66c68, active:0, rv:0, ok
+[2024-09-07 11:24:59.764] [126410] [trace] uv_timer_start:0x563842c66c68, active:1, rv:0, ok
+[2024-09-07 11:24:59.765] [126410] [trace] 
+0x17F2D85CAB9BD333 state_change: 2024:09:07 11:24:59 764028211 --- 127.0.0.1:8000#0 ---
+0x17F2D85CAB9BD333 state_begin : {"127.0.0.1:8000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+0x17F2D85CAB9BD333 event_start : 127.0.0.1:8000#0 raft-start
+0x17F2D85CAB9BD333 event_other : 127.0.0.1:8000#0 step-down term:1_to_1 FOLLOWER_to_FOLLOWER
+0x17F2D85CAB9BD333 state_end   : {"127.0.0.1:8000#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3458],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+[2024-09-07 11:24:59.766] [126410] [info] 
+0x17F2D85CAB9BD333 global-state: 2024:09:07 11:24:59 765191036
+0x17F2D85CAB9BD333 global-state: {"127.0.0.1:8000#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3458],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+0x17F2D85CAB9BD333 global-state: {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+0x17F2D85CAB9BD333 global-state: {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+0x17F2D85CAB9BD333 global-state: {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":true,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+[2024-09-07 11:24:59.766] [126410] [info] tcp-server start, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:8001, handle:0x563842ac35a0, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.766] [126410] [info] acceptor start, addr:127.0.0.1:8001, handle:0x563842ac35a0, loop:0x563842ab5050
+[2024-09-07 11:24:59.766] [126410] [trace] uv_tcp_bind:0x563842ac35a0, rv:0, ok
+[2024-09-07 11:24:59.766] [126410] [trace] uv_listen:0x563842ac35a0, rv:0, ok
+[2024-09-07 11:24:59.766] [126410] [info] timer construct, id:8, name:tick-timer, timeout:0, repeat:1000, handle:0x563842c66828, loop:0x563842ab5050
+[2024-09-07 11:24:59.766] [126410] [trace] uv_timer_init:0x563842c66828, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.766] [126410] [info] timer construct, id:9, name:election-timer, timeout:2545, repeat:0, handle:0x563842c67918, loop:0x563842ab5050
+[2024-09-07 11:24:59.766] [126410] [trace] uv_timer_init:0x563842c67918, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.766] [126410] [info] timer construct, id:10, name:rpc-timer, timeout:0, repeat:1000, handle:0x563842c67a58, loop:0x563842ab5050
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_init:0x563842c67a58, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [info] timer construct, id:11, name:rpc-timer, timeout:0, repeat:1000, handle:0x563842c67b98, loop:0x563842ab5050
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_init:0x563842c67b98, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [info] timer construct, id:12, name:heartbeat-timer, timeout:0, repeat:500, handle:0x563842c67cd8, loop:0x563842ab5050
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_init:0x563842c67cd8, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [info] timer construct, id:13, name:heartbeat-timer, timeout:0, repeat:500, handle:0x563842c67e18, loop:0x563842ab5050
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_init:0x563842c67e18, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_start:0x563842c66828, active:1, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_stop:0x563842c67cd8, active:0, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_stop:0x563842c67e18, active:0, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_stop:0x563842c67a58, active:0, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_stop:0x563842c67b98, active:0, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_stop:0x563842c67918, active:0, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] uv_timer_start:0x563842c67918, active:1, rv:0, ok
+[2024-09-07 11:24:59.767] [126410] [trace] 
+0x17F2D85CABC1912C state_change: 2024:09:07 11:24:59 766501676 --- 127.0.0.1:8001#0 ---
+0x17F2D85CABC1912C state_begin : {"127.0.0.1:8001#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+0x17F2D85CABC1912C event_start : 127.0.0.1:8001#0 raft-start
+0x17F2D85CABC1912C event_other : 127.0.0.1:8001#0 step-down term:1_to_1 FOLLOWER_to_FOLLOWER
+0x17F2D85CABC1912C state_end   : {"127.0.0.1:8001#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3858],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+[2024-09-07 11:24:59.768] [126410] [info] 
+0x17F2D85CABC1912C global-state: 2024:09:07 11:24:59 767636290
+0x17F2D85CABC1912C global-state: {"127.0.0.1:8000#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3458],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+0x17F2D85CABC1912C global-state: {"127.0.0.1:8001#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3858],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+0x17F2D85CABC1912C global-state: {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+0x17F2D85CABC1912C global-state: {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":true,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+[2024-09-07 11:24:59.768] [126410] [info] tcp-server start, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:8002, handle:0x563842b62190, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.768] [126410] [info] acceptor start, addr:127.0.0.1:8002, handle:0x563842b62190, loop:0x563842ab5050
+[2024-09-07 11:24:59.768] [126410] [trace] uv_tcp_bind:0x563842b62190, rv:0, ok
+[2024-09-07 11:24:59.768] [126410] [trace] uv_listen:0x563842b62190, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [info] timer construct, id:14, name:tick-timer, timeout:0, repeat:1000, handle:0x563842c67f58, loop:0x563842ab5050
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_init:0x563842c67f58, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [info] timer construct, id:15, name:election-timer, timeout:2637, repeat:0, handle:0x563842c68098, loop:0x563842ab5050
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_init:0x563842c68098, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [info] timer construct, id:16, name:rpc-timer, timeout:0, repeat:1000, handle:0x563842c681d8, loop:0x563842ab5050
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_init:0x563842c681d8, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [info] timer construct, id:17, name:rpc-timer, timeout:0, repeat:1000, handle:0x563842c68318, loop:0x563842ab5050
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_init:0x563842c68318, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [info] timer construct, id:18, name:heartbeat-timer, timeout:0, repeat:500, handle:0x563842c68748, loop:0x563842ab5050
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_init:0x563842c68748, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [info] timer construct, id:19, name:heartbeat-timer, timeout:0, repeat:500, handle:0x563842c68888, loop:0x563842ab5050
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_init:0x563842c68888, loop:0x563842ab5050, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_start:0x563842c67f58, active:1, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_stop:0x563842c68748, active:0, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_stop:0x563842c68888, active:0, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_stop:0x563842c681d8, active:0, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_stop:0x563842c68318, active:0, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_stop:0x563842c68098, active:0, rv:0, ok
+[2024-09-07 11:24:59.769] [126410] [trace] uv_timer_start:0x563842c68098, active:1, rv:0, ok
+[2024-09-07 11:24:59.770] [126410] [trace] 
+0x17F2D85CABE68308 state_change: 2024:09:07 11:24:59 768922888 --- 127.0.0.1:8002#0 ---
+0x17F2D85CABE68308 state_begin : {"127.0.0.1:8002#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+0x17F2D85CABE68308 event_start : 127.0.0.1:8002#0 raft-start
+0x17F2D85CABE68308 event_other : 127.0.0.1:8002#0 step-down term:1_to_1 FOLLOWER_to_FOLLOWER
+0x17F2D85CABE68308 state_end   : {"127.0.0.1:8002#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3244],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+[2024-09-07 11:24:59.771] [126410] [info] 
+0x17F2D85CABE68308 global-state: 2024:09:07 11:24:59 770057722
+0x17F2D85CABE68308 global-state: {"127.0.0.1:8000#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3458],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842ab8140"]]}
+0x17F2D85CABE68308 global-state: {"127.0.0.1:8001#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3858],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8002#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b2e840"]]}
+0x17F2D85CABE68308 global-state: {"127.0.0.1:8002#0":["FOLLOWER",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,3244],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":true,"standby":false,"transfer":false,"tsf-max-term":0},{"127.0.0.1:8000#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}],"127.0.0.1:8001#0":[{"match":0,"next":1},{"done":false,"grant":false,"iok":false,"logok":false}]}],"0x563842b623b0"]]}
+0x17F2D85CABE68308 global-state: {"127.0.0.1:9000#0":["FOLLOWER(x)",[[{"term":1,"vote":"0"},{"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}],"sm":"null"},{"apply":0,"changing":0,"cmt":0,"elect-ms":[0,0],"interval-chk":true,"last-hbts":"1970-01-01-08-00-00-000000000","leader":"0.0.0.0:0#0","leader_times":0,"pre-vote":false,"pre-voting":false,"print":false,"run":false,"standby":true,"transfer":false,"tsf-max-term":0}],"0x563842bf5610"]]}
+[2024-09-07 11:24:59.771] [126410] [info] tcp-server start, name:raft-server, loop:0x563842ab5050, acceptor:addr:127.0.0.1:9000, handle:0x563842bf5470, loop:0x563842ab5050, conn:0
+[2024-09-07 11:24:59.771] [126410] [info] acceptor start, addr:127.0.0.1:9000, handle:0x563842bf5470, loop:0x563842ab5050
+[2024-09-07 11:24:59.771] [126410] [trace] uv_tcp_bind:0x563842bf5470, rv:0, ok
+[2024-09-07 11:24:59.771] [126410] [trace] uv_listen:0x563842bf5470, rv:-98, address already in use

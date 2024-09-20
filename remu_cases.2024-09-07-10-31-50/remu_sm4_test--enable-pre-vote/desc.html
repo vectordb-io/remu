@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .log-line {
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text File</h1>
+    <pre>
+        <span class="log-line">parameters: </span>
+        <span class="log-line">filename:src/test/remu_sm4_test.cc </span>
+        <span class="log-line">gtest_enable_pre_vote:1 </span>
+        <span class="log-line">gtest_interval_check:0 </span>
+        <span class="log-line">gtest_node_num:3 </span>
+        <span class="log-line"></span>
+        <span class="log-line">steps: </span>
+        <span class="log-line">step1: start 3 nodes </span>
+        <span class="log-line">step2: wait for leader elect </span>
+        <span class="log-line">step3: check leader stable </span>
+        <span class="log-line">step4: propose 5 values </span>
+        <span class="log-line">step5: stop leader </span>
+        <span class="log-line">step6: wait until elect leader </span>
+        <span class="log-line">step7: propose 5 values </span>
+        <span class="log-line">step8: start the old leader </span>
+        <span class="log-line">step9: wait 5s, for log catch up </span>
+        <span class="log-line">step10: check sm value </span>
+        <span class="log-line">step11: check log consistant </span>
+        <span class="log-line">step12: check sm consistant </span>
+        <span class="log-line">step13: quit </span>
+    </pre>
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message Flow Diagram</title>
+  <style>
+    .node-line {
+      stroke: #000;
+      stroke-width: 1.5px;
+    }
+    .link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 1.5px;
+      marker-end: url(#end-arrow);
+    }
+    .loop-link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 1.5px;
+      marker-end: url(#end-arrow);
+    }
+    .label {
+      font: 12px sans-serif;
+    }
+    .node-label {
+      font: 14px sans-serif;
+      fill: #000;
+    }
+    .node-bg {
+      fill: yellow;
+    }
+  </style>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+  <svg width="1500" height="960"></svg>
+  <script>
+    const nodes = [{"id":"127.0.0.1_8000_0","index":0},{"id":"127.0.0.1_8001_0","index":1},{"id":"127.0.0.1_8002_0","index":2},{"id":"127.0.0.1_8003_0","index":3},{"id":"127.0.0.1_8004_0","index":4},{"id":"127.0.0.1_9000_0","index":5}];
+    const messages = [{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"init-config-{\"rc\":[\"127.0.0.1:8000#0\",\"127.0.0.1:8001#0\",\"127.0.0.1:8002#0\",\"127.0.0.1:8003#0\",\"127.0.0.1:8004","index":0},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"enable-send","index":1},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"enable-recv","index":2},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"init-config-{\"rc\":[\"127.0.0.1:8001#0\",\"127.0.0.1:8000#0\",\"127.0.0.1:8002#0\",\"127.0.0.1:8003#0\",\"127.0.0.1:8004","index":3},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"enable-send","index":4},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"enable-recv","index":5},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"init-config-{\"rc\":[\"127.0.0.1:8002#0\",\"127.0.0.1:8000#0\",\"127.0.0.1:8001#0\",\"127.0.0.1:8003#0\",\"127.0.0.1:8004","index":6},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"enable-send","index":7},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"enable-recv","index":8},{"source":"127.0.0.1_8003_0","target":"127.0.0.1_8003_0","message":"init-config-{\"rc\":[\"127.0.0.1:8003#0\",\"127.0.0.1:8000#0\",\"127.0.0.1:8001#0\",\"127.0.0.1:8002#0\",\"127.0.0.1:8004","index":9},{"source":"127.0.0.1_8003_0","target":"127.0.0.1_8003_0","message":"enable-send","index":10},{"source":"127.0.0.1_8003_0","target":"127.0.0.1_8003_0","message":"enable-recv","index":11},{"source":"127.0.0.1_8004_0","target":"127.0.0.1_8004_0","message":"init-config-{\"rc\":[\"127.0.0.1:8004#0\",\"127.0.0.1:8000#0\",\"127.0.0.1:8001#0\",\"127.0.0.1:8002#0\",\"127.0.0.1:8003","index":12},{"source":"127.0.0.1_8004_0","target":"127.0.0.1_8004_0","message":"enable-send","index":13},{"source":"127.0.0.1_8004_0","target":"127.0.0.1_8004_0","message":"enable-recv","index":14},{"source":"127.0.0.1_9000_0","target":"127.0.0.1_9000_0","message":"init-config-{\"rc\":[\"127.0.0.1:9000#0\"]}","index":15},{"source":"127.0.0.1_9000_0","target":"127.0.0.1_9000_0","message":"enable-send","index":16},{"source":"127.0.0.1_9000_0","target":"127.0.0.1_9000_0","message":"enable-recv","index":17},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"raft-start","index":18},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":19},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"raft-start","index":20},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":21},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"raft-start","index":22},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":23},{"source":"127.0.0.1_8003_0","target":"127.0.0.1_8003_0","message":"raft-start","index":24},{"source":"127.0.0.1_8003_0","target":"127.0.0.1_8003_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":25},{"source":"127.0.0.1_8004_0","target":"127.0.0.1_8004_0","message":"raft-start","index":26},{"source":"127.0.0.1_8004_0","target":"127.0.0.1_8004_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":27}];
+
+    const svg = d3.select("svg");
+
+    svg.append('defs').append('marker')
+        .attr('id', 'end-arrow')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 10)
+        .attr('refY', 0)
+        .attr('markerWidth', 6)
+        .attr('markerHeight', 6)
+        .attr('orient', 'auto')
+        .append('path')
+        .attr('d', 'M0,-5L10,0L0,5')
+        .attr('fill', '#000');
+
+    nodes.forEach((node, i) => {
+      const x = 150 + i * 200;
+      const y = 80 - 40;
+
+      svg.append("line")
+         .attr("x1", x)
+         .attr("y1", 80)
+         .attr("x2", x)
+         .attr("y2", 960 - 40)
+         .attr("stroke", "#000")
+         .attr("class", "node-line");
+
+      // 计算文本宽度并设置背景矩形宽度
+      const text = svg.append("text")
+         .attr("x", x)
+         .attr("y", y)
+         .attr("text-anchor", "middle")
+         .attr("class", "node-label")
+         .text(node.id);
+
+      const bbox = text.node().getBBox();
+      const padding = 5;
+      
+      // 更新矩形背景大小
+      svg.insert("rect", "text")
+         .attr("x", bbox.x - padding)
+         .attr("y", bbox.y - padding)
+         .attr("width", bbox.width + 2 * padding)
+         .attr("height", bbox.height + 2 * padding)
+         .attr("class", "node-bg");     
+    });
+
+    messages.forEach((msg, idx) => {
+      const sourceIndex = nodes.findIndex(node => node.id === msg.source);
+      const targetIndex = nodes.findIndex(node => node.id === msg.target);
+
+      const y = 80 + idx * 30;
+      
+      if (sourceIndex === targetIndex) {
+        // 自循环消息
+        const x = 150 + sourceIndex * 200;
+        svg.append("path")
+           .attr("d", `M${x},${y} C${x - 20},${y - 20} ${x + 20},${y - 20} ${x},${y}`)
+           .attr("class", "loop-link");
+
+        svg.append("text")
+           .attr("x", x + 25)  // 将x坐标向右移以避免与其它生命线重叠
+           .attr("y", y - 10)  // 调整 y 坐标，使文本位于弧线右侧
+           .attr("text-anchor", "start")
+           .attr("class", "label")
+           .text(msg.message);
+
+      } else {
+        // 正常消息
+        svg.append("line")
+           .attr("x1", 150 + sourceIndex * 200)
+           .attr("y1", y)
+           .attr("x2", 150 + targetIndex * 200)
+           .attr("y2", y)
+           .attr("class", "link");
+
+        svg.append("text")
+           .attr("x", (150 + sourceIndex * 200 + 150 + targetIndex * 200) / 2)
+           .attr("y", y - 5)
+           .attr("text-anchor", "middle")
+           .attr("class", "label")
+           .text(msg.message);
+      }
+    });
+  </script>
+</body>
+</html>
+
