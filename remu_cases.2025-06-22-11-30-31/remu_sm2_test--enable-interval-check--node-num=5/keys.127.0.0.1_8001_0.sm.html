@@ -1,0 +1,5442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>(REMU)Raft Emulator - Node State</title>
+<link rel="stylesheet" href="b.css">
+</head>
+<body>
+
+<table>
+    <tr>
+      <td class="banner">(REMU)Raft Emulator - Node State</td>
+    </tr>
+</table>
+
+<table>
+	<tr>
+		<td class="nodes">Nodes:</td>
+		<td class="nodes">127.0.0.1:8001#0</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D2F4D7A761 state_change: 2024:09:07 11:33:27 798826849 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":"null"}]</td>
+		<td colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">append first config, term:1, index:1, type:Config, value-len:44</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 init-config {"rc":["127.0.0.1:8001#0","127.0.0.1:8000#0","127.0.0.1:8002#0","127.0.0.1:8003#0","127.0.0.1:8004</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td class="change" colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D2F4F7FBE3 state_change: 2024:09:07 11:33:27 800945635 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 enable-send</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D2F5036656 state_change: 2024:09:07 11:33:27 801693782 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 enable-recv</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D2FD666840 state_change: 2024:09:07 11:33:27 942400064 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_start</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 raft-start</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:1_to_1 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td class="change">FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td class="change" colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td class="change">"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D3AACCC8ED state_change: 2024:09:07 11:33:30 851567853 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":1</td>
+		<td>"vote":0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"request-vote":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x919880B0"},{"last":0,"last-term":0,"leader-transfer":false,"pre-vote":false},{"elapse":16,"send_ts":1725680010834685122}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td class="change">"term":2</td>
+		<td class="change">"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D3CF782626 state_change: 2024:09:07 11:33:31 466778150 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"request-vote":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8003#0","term":2,"uid":"0xD2F6ED49"},{"last":0,"last-term":0,"leader-transfer":false,"pre-vote":false},{"elapse":3,"send_ts":1725680011462922488}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D3E5DF990B state_change: 2024:09:07 11:33:31 842656523 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"request-vote":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x914091EF"},{"last":0,"last-term":0,"leader-transfer":false,"pre-vote":false},{"elapse":11,"send_ts":1725680011831437193}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"request-vote-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xEA3B3F6D"},{"grant":true,"interval-ok":true,"log-ok":true,"pre-vote":false,"req-term":2},{"elapse":0,"send_ts":1725680011843242207}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D3E7E19C2F state_change: 2024:09:07 11:33:31 876342831 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[0,0,1,{"chk":"0x0","ltm":0},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":0.0.0.0:0#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":1970-01-01-08-00-00-000000000</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x41A29916"},{"commit":0,"entry-count":1,"pre":0,"pre-term":0},{"entries":[{"sz":1,"tm":2,"tp":"Noop"}]},{"elapse":10,"send_ts":1725680011865961020}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">append one log, term:2, index:1, type:Noop, value-len:1</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x80D0F67F"},{"last":1,"success":true},{"req-entry-count":1,"req-pre":0,"req-term":2},{"elapse":0,"send_ts":1725680011876563894}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td class="change" colspan="3">"log":[1,1,2,{"chk":"0x461615E0","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td class="change">"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-31-877520163</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D40592B406 state_change: 2024:09:07 11:33:32 374488070 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,1,2,{"chk":"0x461615E0","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":0</td>
+		<td>"cmt":0</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-31-877520163</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x2041DB90"},{"commit":1,"entry-count":0,"pre":1,"pre-term":2},null,{"elapse":4,"send_ts":1725680012370101276}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">update commit from 0 to 1</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">state-machine apply, last-apply:0, commit:1</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xF1D13822"},{"last":1,"success":true},{"req-entry-count":0,"req-pre":1,"req-term":2},{"elapse":0,"send_ts":1725680012374637485}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,1,2,{"chk":"0x461615E0","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td class="change">"apply":1</td>
+		<td class="change">"cmt":1</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-32-374788178</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D4236FB61D state_change: 2024:09:07 11:33:32 875511325 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,1,2,{"chk":"0x461615E0","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":1</td>
+		<td>"cmt":1</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-32-374788178</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x738DEFCC"},{"commit":1,"entry-count":0,"pre":1,"pre-term":2},null,{"elapse":4,"send_ts":1725680012871070759}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x9AC59403"},{"last":1,"success":true},{"req-entry-count":0,"req-pre":1,"req-term":2},{"elapse":0,"send_ts":1725680012875660326}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,1,2,{"chk":"0x461615E0","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":1</td>
+		<td>"cmt":1</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-32-875810928</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D42AE6BA6A state_change: 2024:09:07 11:33:33 000751722 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,1,2,{"chk":"0x461615E0","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":1</td>
+		<td>"cmt":1</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-32-875810928</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xED0CD8CB"},{"commit":1,"entry-count":1,"pre":1,"pre-term":2},{"entries":[{"sz":13,"tm":2,"tp":"Data"}]},{"elapse":5,"send_ts":1725680012995553943}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">append one log, term:2, index:2, type:Data, value-len:13</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x9E123A35"},{"last":2,"success":true},{"req-entry-count":1,"req-pre":1,"req-term":2},{"elapse":0,"send_ts":1725680013001219823}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td class="change" colspan="3">"log":[1,2,3,{"chk":"0x805B6BEC","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":1</td>
+		<td>"cmt":1</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-33-002559271</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D448B8CB58 state_change: 2024:09:07 11:33:33 501057880 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,2,3,{"chk":"0x805B6BEC","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":0,"chk":"0x0","lst":0,"ltm":0}</td>
+	</tr>
+	<tr>
+		<td>"apply":1</td>
+		<td>"cmt":1</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-33-002559271</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x79F93368"},{"commit":2,"entry-count":0,"pre":2,"pre-term":2},null,{"elapse":7,"send_ts":1725680013493903693}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">update commit from 1 to 2</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">state-machine apply, last-apply:1, commit:2</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x59CCCBEA"},{"last":2,"success":true},{"req-entry-count":0,"req-pre":2,"req-term":2},{"elapse":0,"send_ts":1725680013501207497}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,2,3,{"chk":"0x805B6BEC","ltm":2},{"cfs":[0]}]</td>
+		<td class="change" colspan="2">"sm":{"apl-cnt":1,"chk":"0x82DB3C83","lst":2,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td class="change">"apply":2</td>
+		<td class="change">"cmt":2</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-33-502161870</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D466C3AFA8 state_change: 2024:09:07 11:33:34 005088168 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,2,3,{"chk":"0x805B6BEC","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":1,"chk":"0x82DB3C83","lst":2,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":2</td>
+		<td>"cmt":2</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-33-502161870</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xBE4B14DE"},{"commit":2,"entry-count":1,"pre":2,"pre-term":2},{"entries":[{"sz":13,"tm":2,"tp":"Data"}]},{"elapse":5,"send_ts":1725680013999146832}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">append one log, term:2, index:3, type:Data, value-len:13</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x71C0854B"},{"last":3,"success":true},{"req-entry-count":1,"req-pre":2,"req-term":2},{"elapse":0,"send_ts":1725680014005245351}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td class="change" colspan="3">"log":[1,3,4,{"chk":"0xC466B80B","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":1,"chk":"0x82DB3C83","lst":2,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":2</td>
+		<td>"cmt":2</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-34-006213584</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D484711C08 state_change: 2024:09:07 11:33:34 502992904 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,3,4,{"chk":"0xC466B80B","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":1,"chk":"0x82DB3C83","lst":2,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":2</td>
+		<td>"cmt":2</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-34-006213584</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x188F4E90"},{"commit":3,"entry-count":0,"pre":3,"pre-term":2},null,{"elapse":7,"send_ts":1725680014495802853}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">update commit from 2 to 3</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">state-machine apply, last-apply:2, commit:3</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x2690F75C"},{"last":3,"success":true},{"req-entry-count":0,"req-pre":3,"req-term":2},{"elapse":0,"send_ts":1725680014503142247}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,3,4,{"chk":"0xC466B80B","ltm":2},{"cfs":[0]}]</td>
+		<td class="change" colspan="2">"sm":{"apl-cnt":2,"chk":"0x607C24D5","lst":3,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td class="change">"apply":3</td>
+		<td class="change">"cmt":3</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-34-504147254</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D4A26B83AC state_change: 2024:09:07 11:33:35 005942700 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,3,4,{"chk":"0xC466B80B","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":2,"chk":"0x607C24D5","lst":3,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":3</td>
+		<td>"cmt":3</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-34-504147254</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x3A9C5E35"},{"commit":3,"entry-count":1,"pre":3,"pre-term":2},{"entries":[{"sz":13,"tm":2,"tp":"Data"}]},{"elapse":6,"send_ts":1725680014999414117}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">append one log, term:2, index:4, type:Data, value-len:13</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xDD6C67D9"},{"last":4,"success":true},{"req-entry-count":1,"req-pre":3,"req-term":2},{"elapse":0,"send_ts":1725680015006101111}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td class="change" colspan="3">"log":[1,4,5,{"chk":"0x7E1D7E75","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":2,"chk":"0x607C24D5","lst":3,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":3</td>
+		<td>"cmt":3</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-35-007228409</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D4C00AFC6D state_change: 2024:09:07 11:33:35 502933101 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,4,5,{"chk":"0x7E1D7E75","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":2,"chk":"0x607C24D5","lst":3,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":3</td>
+		<td>"cmt":3</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-35-007228409</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x96FFBA05"},{"commit":4,"entry-count":0,"pre":4,"pre-term":2},null,{"elapse":7,"send_ts":1725680015495291858}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">update commit from 3 to 4</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">state-machine apply, last-apply:3, commit:4</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x9FFC3759"},{"last":4,"success":true},{"req-entry-count":0,"req-pre":4,"req-term":2},{"elapse":0,"send_ts":1725680015503084207}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,4,5,{"chk":"0x7E1D7E75","ltm":2},{"cfs":[0]}]</td>
+		<td class="change" colspan="2">"sm":{"apl-cnt":3,"chk":"0x78DEC4E9","lst":4,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td class="change">"apply":4</td>
+		<td class="change">"cmt":4</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-35-504024783</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D4DE085614 state_change: 2024:09:07 11:33:36 006075924 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,4,5,{"chk":"0x7E1D7E75","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":3,"chk":"0x78DEC4E9","lst":4,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":4</td>
+		<td>"cmt":4</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-35-504024783</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x773B4DBC"},{"commit":4,"entry-count":1,"pre":4,"pre-term":2},{"entries":[{"sz":13,"tm":2,"tp":"Data"}]},{"elapse":6,"send_ts":1725680015999863374}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">append one log, term:2, index:5, type:Data, value-len:13</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xB9A7D007"},{"last":5,"success":true},{"req-entry-count":1,"req-pre":4,"req-term":2},{"elapse":0,"send_ts":1725680016006234783}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td class="change" colspan="3">"log":[1,5,6,{"chk":"0x29CED3C6","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":3,"chk":"0x78DEC4E9","lst":4,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":4</td>
+		<td>"cmt":4</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-36-007348980</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D4FBB52840 state_change: 2024:09:07 11:33:36 503941184 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,5,6,{"chk":"0x29CED3C6","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":3,"chk":"0x78DEC4E9","lst":4,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":4</td>
+		<td>"cmt":4</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-36-007348980</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xA2555FB6"},{"commit":5,"entry-count":0,"pre":5,"pre-term":2},null,{"elapse":7,"send_ts":1725680016496427070}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">update commit from 4 to 5</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">state-machine apply, last-apply:4, commit:5</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x93406A04"},{"last":5,"success":true},{"req-entry-count":0,"req-pre":5,"req-term":2},{"elapse":0,"send_ts":1725680016504091962}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,5,6,{"chk":"0x29CED3C6","ltm":2},{"cfs":[0]}]</td>
+		<td class="change" colspan="2">"sm":{"apl-cnt":4,"chk":"0x0","lst":5,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td class="change">"apply":5</td>
+		<td class="change">"cmt":5</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-36-505052011</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D519A3A0DE state_change: 2024:09:07 11:33:37 006108894 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,5,6,{"chk":"0x29CED3C6","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":4,"chk":"0x0","lst":5,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":5</td>
+		<td>"cmt":5</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-36-505052011</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x43C3D2C5"},{"commit":5,"entry-count":1,"pre":5,"pre-term":2},{"entries":[{"sz":13,"tm":2,"tp":"Data"}]},{"elapse":5,"send_ts":1725680017000168449}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">append one log, term:2, index:6, type:Data, value-len:13</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xA4B03313"},{"last":6,"success":true},{"req-entry-count":1,"req-pre":5,"req-term":2},{"elapse":0,"send_ts":1725680017006267547}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td class="change" colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":4,"chk":"0x0","lst":5,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":5</td>
+		<td>"cmt":5</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-37-007193992</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D5374355D8 state_change: 2024:09:07 11:33:37 503114712 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":4,"chk":"0x0","lst":5,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":5</td>
+		<td>"cmt":5</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-37-007193992</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xA2E14B9"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680017496072190}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">update commit from 5 to 6</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">state-machine apply, last-apply:5, commit:6</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xCB3930FD"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680017503266497}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td class="change" colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td class="change">"apply":6</td>
+		<td class="change">"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-37-504637743</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D5553767DC state_change: 2024:09:07 11:33:38 005649372 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-37-504637743</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x21201EB5"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":3,"send_ts":1725680018001698627}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xE0A7ADF3"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680018005818319}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-38-005976576</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D572ED81CB state_change: 2024:09:07 11:33:38 504122827 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-38-005976576</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x36DEFB55"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680018496965703}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x5EC305E6"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680018504273918}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-38-504427227</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D590D18EE3 state_change: 2024:09:07 11:33:39 005607651 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-38-504427227</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x4DDF8049"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":3,"send_ts":1725680019001768707}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x1FAF1620"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680019005758803}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-39-005934769</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D5AE88CC46 state_change: 2024:09:07 11:33:39 504155718 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-39-005934769</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xC47DBDB4"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680019496907612}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x76032A15"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680019504306964}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-39-504455940</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D5CC6E19AD state_change: 2024:09:07 11:33:40 005722541 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-39-504455940</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x581ED3A"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":3,"send_ts":1725680020001796255}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x26C6F255"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680020005878496}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-40-006031400</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D5EA23D06A state_change: 2024:09:07 11:33:40 504170602 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-40-006031400</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x7B7C8BBD"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680020496869799}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x6F807545"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680020504322487}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-40-504474295</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D608086099 state_change: 2024:09:07 11:33:41 005688985 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-40-504474295</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xFE24164B"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":3,"send_ts":1725680021001789055}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x62BE42A6"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680021005841246}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-41-005995940</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D625BE5D59 state_change: 2024:09:07 11:33:41 504154969 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-41-005995940</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x30ABE6D2"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680021496994970}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x267745DF"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680021504306129}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-41-504463025</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D643A1186F state_change: 2024:09:07 11:33:42 005553263 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-41-504463025</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xFD9696CF"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":3,"send_ts":1725680022001762014}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x573D98A5"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680022005705806}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-42-005871405</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D661684C4B state_change: 2024:09:07 11:33:42 505147467 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-42-005871405</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x1CD864BB"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680022497760794}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xD9CF6E78"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680022505298627}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-42-505447329</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D67F83A75E state_change: 2024:09:07 11:33:43 010256734 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-42-505447329</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0xC936F968"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680023002863052}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x4E1F2681"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680023010408077}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-43-010556516</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D69D5CC9C4 state_change: 2024:09:07 11:33:43 511026116 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-43-010556516</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x8574529"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680023503574046}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xCD9174D4"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680023511177137}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-43-511332888</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D6BB67BA9C state_change: 2024:09:07 11:33:44 015059612 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-43-511332888</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x7E139DC9"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680024007510127}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0xF5757EED"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680024015284439}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-44-015597384</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D6D9438EED state_change: 2024:09:07 11:33:44 516005613 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-44-015597384</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_recv</td>
+		<td class="event" colspan="7">{"append-entries":[{"dest":"127.0.0.1:8001#0","src":"127.0.0.1:8000#0","term":2,"uid":"0x26170C66"},{"commit":6,"entry-count":0,"pre":6,"pre-term":2},null,{"elapse":7,"send_ts":1725680024508394520}]}</td>
+	</tr>
+	<tr>
+		<td class="event">event_other</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 step-down term:2_to_2 FOLLOWER_to_FOLLOWER</td>
+	</tr>
+	<tr>
+		<td class="event">event_send</td>
+		<td class="event" colspan="7">{"append-entries-reply":[{"dest":"127.0.0.1:8000#0","src":"127.0.0.1:8001#0","term":2,"uid":"0x9B2A71F8"},{"last":6,"success":true},{"req-entry-count":0,"req-pre":6,"req-term":2},{"elapse":0,"send_ts":1725680024516157043}]}</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td class="change" colspan="2">"last-hbts":2024-09-07-11-33-44-516311933</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+<table>
+	<tr>
+		<td class="table-title" colspan="7">0x17F2D8D6F63F1151 state_change: 2024:09:07 11:33:45 002250577 --- 127.0.0.1:8001#0 ---</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_begin</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td>FOLLOWER</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td colspan="2">"sm":{"apl-cnt":5,"chk":"0xD85AA996","lst":6,"ltm":2}</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td>"run":true</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-44-516311933</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td class="event">event_stop</td>
+		<td class="event" colspan="7">127.0.0.1:8001#0 raft-stop</td>
+	</tr>
+	<tr>
+		<td class="event" colspan="7">state_end</td>
+	</tr>
+	<tr>
+		<td class="node">127.0.0.1:8001#0</td>
+		<td class="change">FOLLOWER(x)</td>
+		<td colspan="3"></td>
+		<td>"changing":0</td>
+		<td>"standby":false</td>
+	</tr>
+	<tr>
+		<td>"term":2</td>
+		<td>"vote":127.0.0.1:8000#0</td>
+		<td colspan="3">"log":[1,6,7,{"chk":"0xC7A8764F","ltm":2},{"cfs":[0]}]</td>
+		<td class="change" colspan="2">"sm":"null"</td>
+	</tr>
+	<tr>
+		<td>"apply":6</td>
+		<td>"cmt":6</td>
+		<td>"leader":127.0.0.1:8000#0</td>
+		<td>"elect_ms":undefined</td>
+		<td class="change">"run":false</td>
+		<td>"print":false</td>
+		<td colspan="5">0x55fe199002d0</td>
+	</tr>
+	<tr>
+		<td>"pre-vote":false</td>
+		<td>"pre-voting":false</td>
+		<td>"transfer":false</td>
+		<td>"tsf-max-term":0</td>
+		<td>"interval-chk":true</td>
+		<td colspan="2">"last-hbts":2024-09-07-11-33-44-516311933</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8000#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8002#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8003#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+	<tr>
+		<td>127.0.0.1:8004#0</td>
+		<td>"match":0</td>
+		<td>"next":1</td>
+		<td>"done":false</td>
+		<td>"grant":false</td>
+		<td>"logok":false</td>
+		<td>"iok":false</td>
+	</tr>
+</table>
+</body>
+</html>

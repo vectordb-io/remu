@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message Flow Diagram</title>
+  <style>
+    .node-line {
+      stroke: #000;
+      stroke-width: 1.5px;
+    }
+    .link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 1.5px;
+      marker-end: url(#end-arrow);
+    }
+    .loop-link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 1.5px;
+      marker-end: url(#end-arrow);
+    }
+    .label {
+      font: 12px sans-serif;
+    }
+    .node-label {
+      font: 14px sans-serif;
+      fill: #000;
+    }
+    .node-bg {
+      fill: yellow;
+    }
+  </style>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+  <svg width="900" height="3690"></svg>
+  <script>
+    const nodes = [{"id":"127.0.0.1_8000_0","index":0},{"id":"127.0.0.1_8001_0","index":1},{"id":"127.0.0.1_8002_0","index":2}];
+    const messages = [{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"init-config-{\"rc\":[\"127.0.0.1:8000#0\",\"127.0.0.1:8001#0\",\"127.0.0.1:8002#0\"]}","index":0},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"enable-send","index":1},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"enable-recv","index":2},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"init-config-{\"rc\":[\"127.0.0.1:8001#0\",\"127.0.0.1:8000#0\",\"127.0.0.1:8002#0\"]}","index":3},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"enable-send","index":4},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"enable-recv","index":5},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"init-config-{\"rc\":[\"127.0.0.1:8002#0\",\"127.0.0.1:8000#0\",\"127.0.0.1:8001#0\"]}","index":6},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"enable-send","index":7},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"enable-recv","index":8},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"raft-start","index":9},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":10},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"raft-start","index":11},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":12},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"raft-start","index":13},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:1_to_1-FOLLOWER_to_FOLLOWER","index":14},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"election-timer","index":15},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"become-candidate-term:1-FOLLOWER_to_CANDIDATE","index":16},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"election-timer","index":17},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"become-candidate-term:1-FOLLOWER_to_CANDIDATE","index":18},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"election-timer","index":19},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"become-candidate-term:1-FOLLOWER_to_CANDIDATE","index":20},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"pre-request-vote_0x2A43B6B8_tm:1_last:0_ltm:0_transfer:false","index":21},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"pre-request-vote_0xBE020383_tm:1_last:0_ltm:0_transfer:false","index":22},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:1_to_1-CANDIDATE_to_FOLLOWER","index":23},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"pre-request-vote-reply_0x71C54DB8_tm:1_grant:false_logok:true_interval-ok:true","index":24},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:1_to_1-CANDIDATE_to_FOLLOWER","index":25},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"pre-request-vote-reply_0x934B3B90_tm:1_grant:false_logok:true_interval-ok:true","index":26},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"increase-term-term:1_to_2","index":27},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"become-candidate-term:2-CANDIDATE_to_CANDIDATE","index":28},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"request-vote_0x6DCED7FF_tm:2_last:0_ltm:0_transfer:false","index":29},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"request-vote_0x2847822_tm:2_last:0_ltm:0_transfer:false","index":30},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":31},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":32},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"request-vote-reply_0x43B8464E_tm:2_grant:true_logok:true_interval-ok:true","index":33},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":34},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":35},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"request-vote-reply_0xC1C4153D_tm:2_grant:true_logok:true_interval-ok:true","index":36},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"become-leader-term:2-CANDIDATE_to_LEADER","index":37},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x39B05738_tm:2_cmt:0_pre:0_ptm:0_cnt:1","index":38},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0xA232E290_tm:2_cmt:0_pre:0_ptm:0_cnt:1","index":39},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":40},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x9B20D579_tm:2_last:1_success:true","index":41},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":42},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x1FD3E462_tm:2_last:1_success:true","index":43},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x55686A60_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":44},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0xF4E34040_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":45},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":46},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0xE8D33FBD_tm:2_last:1_success:true","index":47},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":48},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x5BAD14F5_tm:2_last:1_success:true","index":49},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0xBB9582F3_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":50},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x80001934_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":51},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":52},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x6D29B61C_tm:2_last:1_success:true","index":53},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":54},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x86BEB5DA_tm:2_last:1_success:true","index":55},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x43C22DDE_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":56},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0xBCC9CA5_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":57},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":58},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0xFA222B49_tm:2_last:1_success:true","index":59},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":60},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x2E6E9A5D_tm:2_last:1_success:true","index":61},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x4CC97FC9_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":62},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x6ED9A906_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":63},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":64},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0xE4D7D9B6_tm:2_last:1_success:true","index":65},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":66},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x858BCE3A_tm:2_last:1_success:true","index":67},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x277594E5_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":68},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0xFDA3BE79_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":69},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":70},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0xF92CAB0D_tm:2_last:1_success:true","index":71},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":72},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x9D9A9621_tm:2_last:1_success:true","index":73},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x8E80C8AB_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":74},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x77C28C0_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":75},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":76},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0xC0279F4F_tm:2_last:1_success:true","index":77},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":78},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x9F5902BA_tm:2_last:1_success:true","index":79},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x729E1213_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":80},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x1FBB93C0_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":81},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":82},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x15A8D40D_tm:2_last:1_success:true","index":83},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":84},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x9EACAF35_tm:2_last:1_success:true","index":85},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x80CCA728_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":86},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x79476248_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":87},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":88},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x37740CA3_tm:2_last:1_success:true","index":89},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":90},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0xC23D9F1C_tm:2_last:1_success:true","index":91},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0xCE7C8CF_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":92},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x7D79558A_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":93},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":94},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x2F624E0E_tm:2_last:1_success:true","index":95},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":96},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0xA051F655_tm:2_last:1_success:true","index":97},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0x362054AC_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":98},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0xBF4C0121_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":99},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":100},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x9836C8E9_tm:2_last:1_success:true","index":101},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":102},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x5F2B1877_tm:2_last:1_success:true","index":103},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0xD17AF6BF_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":104},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x5A72301A_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":105},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":106},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x906A74D9_tm:2_last:1_success:true","index":107},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":108},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x791DA188_tm:2_last:1_success:true","index":109},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8002_0","message":"append-entries_0xA6A2D473_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":110},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8000_0","message":"append-entries_0x713E3D4D_tm:2_cmt:1_pre:1_ptm:2_cnt:0","index":111},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":112},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x63321562_tm:2_last:1_success:true","index":113},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"step-down-term:2_to_2-FOLLOWER_to_FOLLOWER","index":114},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8001_0","message":"append-entries-reply_0x77135122_tm:2_last:1_success:true","index":115},{"source":"127.0.0.1_8000_0","target":"127.0.0.1_8000_0","message":"raft-stop","index":116},{"source":"127.0.0.1_8001_0","target":"127.0.0.1_8001_0","message":"raft-stop","index":117},{"source":"127.0.0.1_8002_0","target":"127.0.0.1_8002_0","message":"raft-stop","index":118}];
+
+    const svg = d3.select("svg");
+
+    svg.append('defs').append('marker')
+        .attr('id', 'end-arrow')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 10)
+        .attr('refY', 0)
+        .attr('markerWidth', 6)
+        .attr('markerHeight', 6)
+        .attr('orient', 'auto')
+        .append('path')
+        .attr('d', 'M0,-5L10,0L0,5')
+        .attr('fill', '#000');
+
+    nodes.forEach((node, i) => {
+      const x = 150 + i * 200;
+      const y = 80 - 40;
+
+      svg.append("line")
+         .attr("x1", x)
+         .attr("y1", 80)
+         .attr("x2", x)
+         .attr("y2", 3690 - 40)
+         .attr("stroke", "#000")
+         .attr("class", "node-line");
+
+      // 计算文本宽度并设置背景矩形宽度
+      const text = svg.append("text")
+         .attr("x", x)
+         .attr("y", y)
+         .attr("text-anchor", "middle")
+         .attr("class", "node-label")
+         .text(node.id);
+
+      const bbox = text.node().getBBox();
+      const padding = 5;
+      
+      // 更新矩形背景大小
+      svg.insert("rect", "text")
+         .attr("x", bbox.x - padding)
+         .attr("y", bbox.y - padding)
+         .attr("width", bbox.width + 2 * padding)
+         .attr("height", bbox.height + 2 * padding)
+         .attr("class", "node-bg");     
+    });
+
+    messages.forEach((msg, idx) => {
+      const sourceIndex = nodes.findIndex(node => node.id === msg.source);
+      const targetIndex = nodes.findIndex(node => node.id === msg.target);
+
+      const y = 80 + idx * 30;
+      
+      if (sourceIndex === targetIndex) {
+        // 自循环消息
+        const x = 150 + sourceIndex * 200;
+        svg.append("path")
+           .attr("d", `M${x},${y} C${x - 20},${y - 20} ${x + 20},${y - 20} ${x},${y}`)
+           .attr("class", "loop-link");
+
+        svg.append("text")
+           .attr("x", x + 25)  // 将x坐标向右移以避免与其它生命线重叠
+           .attr("y", y - 10)  // 调整 y 坐标，使文本位于弧线右侧
+           .attr("text-anchor", "start")
+           .attr("class", "label")
+           .text(msg.message);
+
+      } else {
+        // 正常消息
+        svg.append("line")
+           .attr("x1", 150 + sourceIndex * 200)
+           .attr("y1", y)
+           .attr("x2", 150 + targetIndex * 200)
+           .attr("y2", y)
+           .attr("class", "link");
+
+        svg.append("text")
+           .attr("x", (150 + sourceIndex * 200 + 150 + targetIndex * 200) / 2)
+           .attr("y", y - 5)
+           .attr("text-anchor", "middle")
+           .attr("class", "label")
+           .text(msg.message);
+      }
+    });
+  </script>
+</body>
+</html>
+
